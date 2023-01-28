@@ -10,7 +10,7 @@ CREATE TABLE launch (
 );
 
 CREATE TABLE launch_location (
-  launch_id SERIAL REFERENCES launch(id) UNIQUE,
+  launch_id SERIAL REFERENCES launch(id) ON DELETE CASCADE,
   city VARCHAR(55) NOT NULL,
   state VARCHAR(55) NOT NULL,
   country VARCHAR(55) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE launch_location (
 );
 
 CREATE TABLE launch_technical_info (
-  launch_id SERIAL REFERENCES launch(id) UNIQUE,
+  launch_id SERIAL REFERENCES launch(id) ON DELETE CASCADE,
   wind_limit SMALLINT,
   launch_direction VARCHAR(5),
   slope VARCHAR(5),
