@@ -8,7 +8,7 @@ const launchRoute = require('./routes/Launches');
 //////////////MIDDLEWARE////////////////
 
 app.use(cors());
-app.use(express.json()); //req.body
+app.use(express.json());
 app.use(logger('dev')); //USE MORGAN
 
 //////////////ROUTE/////////////////////
