@@ -6,6 +6,9 @@ Created using Postgresql/Express/Node/React (PERN)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Features](#features)
+* [Todo](#todo)
+* [Bugs](#bugs)
+* [Screenshots](#screenshots)
 
 ## General info
 This web application was made out of a need to have weather forecasts for several locations available on one display page.
@@ -38,12 +41,25 @@ Project is created with:
 Ex. If it is the middle of the day, the app will show the forecast for that evening and then the next morning.
 <br />
 
-##TODO
-<br />
-*Add admin credentials for ability to create POST/PUT/DELETE requests
-<br />
-*Add better styling
-<br />
-*Add image storing capabilities for photos of launches and their flights
+## TODO
+* Add admin credentials for ability to create POST/PUT/DELETE requests
+* Add better styling
+* Add image storing capabilities for photos of launches and their flights
+* Have forms redirect to the home page after submitting, edditing or deleting
 
-##BUGS
+## BUGS
+* Refreshing the launch page resets the id state which keeps the get request from working, thus clearing out all information about the launch.
+* All launches in the datatbase are fetched when entering the site. I did this on purpose but now would change it to only fetching the launches in the state you have selected. Hopefully this would reduce response time in the beginning.
+
+## Screenshots
+A view of the home page. Select a state on the left to see the launches and their weather conditions.
+![image](https://user-images.githubusercontent.com/85317430/218202758-d05ad217-2b43-429c-b257-0a3f48d8a75f.png)
+<br />
+After clicking Submit in the top right corner you will swee this page, where you can sumbit a launch. Certain parameters are required. This will be behind an admin login in the future.
+![image](https://user-images.githubusercontent.com/85317430/218202975-ff32ac53-9d6f-425c-a03a-d9bf805a0f39.png)
+<br />
+When the launch is submitted it is automatically added to the home page with its weather conditoins displayed.
+![image](https://user-images.githubusercontent.com/85317430/218203798-169a144d-ed07-4d39-a012-5ee1317f0cab.png)
+<br />
+Clicking on a launch will take you to its own individual page where it displays about and technical info. From here you can also click to edit button to edit the launch info or delete it from the database.
+![image](https://user-images.githubusercontent.com/85317430/218204017-b6b300cf-8bdf-4072-a3fb-bda46d012758.png)
