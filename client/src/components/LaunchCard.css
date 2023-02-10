@@ -1,0 +1,23 @@
+.launchCard {
+  text-align: center;
+  background-color: lightgrey;
+  width: 310px;
+  height: 460px;
+  margin: 1.5rem;
+
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 10px 13px 10px -7px rgba(0, 0, 0, 0.5);
+
+}
+
+.launchcard-link {
+  text-decoration: none;
+  color: black;
+}
+
+.edit-launch-page h1 {
+  text-align: center;
+}

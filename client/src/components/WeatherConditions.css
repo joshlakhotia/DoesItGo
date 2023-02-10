@@ -1,0 +1,57 @@
+.sunrise-items {
+  font-size: 14px;
+}
+
+.sunrise-first {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sunrise-first div {
+  display: block;
+  width: 3rem;
+  padding: 0;
+}
+
+.sunrise-second {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+.sunset-items {
+  font-size: 14px;
+}
+
+.sunset-first {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sunset-first div {
+  display: block;
+  width: 3rem;
+  padding: 0;
+}
+
+.sunset-second {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.first-forecast h4 {
+  margin-bottom: 0.5rem;
+}
+
+.second-forecast h4 {
+  margin-bottom: .5rem;
+}
+
+.green {
+  color: rgb(11, 165, 11);
+}
+
+.red {
+  color: rgb(190, 9, 9);
+}

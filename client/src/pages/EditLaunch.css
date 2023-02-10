@@ -1,0 +1,44 @@
+form {
+  padding-left: 30rem;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-left {
+  width: 50%;
+}
+
+.form-right {
+  width: 50%;
+}
+
+form div {
+  padding: .5rem;
+}
+
+
+form label {
+  display: block;
+}
+
+form input {
+  padding: 5px;
+  margin: 10px 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  width: 90%;
+}
+
+.cliff-input {
+  display: flex;
+}
+
+.cliff-input label {
+  padding-top: 5px;
+  width: 20%;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: space-evenly;
+}

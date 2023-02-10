@@ -1,0 +1,60 @@
+.launch-page {
+  padding: 5px 16px;
+}
+
+#launch-title {
+  text-align: left;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: #666769;
+  font-size: 15px;
+}
+
+.description {
+  padding: 10px 0;
+}
+
+.description h5{
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.technical {
+  text-align: center;
+  width: 400px;
+}
+
+.technical h3 {
+  text-align: left;
+}
+
+.tech-info {
+  display: flex;
+}
+
+.tech-left {
+  margin: 10px;
+  width: 250px;
+}
+
+.tech-right {
+  margin: 10px;
+  width: 250px;
+}
+
+.tech-info p {
+  margin: 10px;
+  padding: 10px;
+  line-height: 50%;
+}
+
+.cliff-true {
+  color: rgb(177, 3, 3);
+}
+
+.cliff-false {
+  color: rgb(10, 192, 10);
+}

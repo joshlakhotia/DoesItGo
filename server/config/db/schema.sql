@@ -14,14 +14,15 @@ CREATE TABLE launch_location (
   city VARCHAR(55) NOT NULL,
   state VARCHAR(55) NOT NULL,
   country VARCHAR(55) NOT NULL,
-  coordinates POINT 
+  latitude DECIMAL(7,4) NOT NULL,
+  longitude DECIMAL(7,4) NOT NULL
 );
 
 CREATE TABLE launch_technical_info (
   launch_id SERIAL REFERENCES launch(id) ON DELETE CASCADE,
-  wind_limit SMALLINT,
-  launch_direction VARCHAR(5),
-  slope VARCHAR(5),
+  wind_limit SMALLINT NOT NULL,
+  launch_direction SMALLINT NOT NULL,
+  slope SMALLINT,
   elevation_ft SMALLINT,
   elevation_m SMALLINT,
   flyable_alt_f SMALLINT,

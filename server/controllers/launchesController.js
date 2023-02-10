@@ -15,7 +15,8 @@ const createLaunch = async (req, res) => {
       city, //NOTNULL
       state, //NOTNULL
       country, //NOTNULL
-      coordinates,
+      latitude, //NOTNULL
+      longitude, //NOTNULL
       wind_limit,
       launch_direction,
       slope,
@@ -26,7 +27,7 @@ const createLaunch = async (req, res) => {
     } = req.body;
 
     await Launch.createLaunch(name, description, launch_types, cliff_launch, hiking_time);
-    await Launch.createLocation(city, state, country, coordinates);
+    await Launch.createLocation(city, state, country, latitude, longitude);
     await Launch.createTechInfo(wind_limit, launch_direction, slope, elevation_ft, elevation_m, flyable_alt_f, flyable_alt_m);
 
     res.json("Launch Created");
@@ -79,7 +80,8 @@ const updateLaunch = async(req, res) => {
       city, //NOTNULL
       state, //NOTNULL
       country, //NOTNULL
-      coordinates,
+      latitude, //NOTNULL
+      longitude, //NOTNULL
       wind_limit,
       launch_direction,
       slope,
@@ -90,7 +92,7 @@ const updateLaunch = async(req, res) => {
     } = req.body;
 
     await Launch.updateLaunch(name, description, launch_types, cliff_launch, hiking_time, id);
-    await Launch.updateLocation(city, state, country, coordinates, id);
+    await Launch.updateLocation(city, state, country, latitude, longitude, id);
     await Launch.updateTech(wind_limit, launch_direction, slope, elevation_ft, elevation_m, flyable_alt_f, flyable_alt_m, id);
 
     res.json("Launch Updated");

@@ -1,0 +1,8 @@
+.state-title {
+  text-align: center;
+}
+
+.launchCard-list {
+  display: flex;
+  flex-wrap: wrap;
+}

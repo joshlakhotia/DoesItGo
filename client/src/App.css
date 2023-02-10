@@ -1,0 +1,10 @@
+.main-page {
+  display: flex;
+  height: 100vh;
+}
+
+div.content {
+  padding: 1px 16px;
+  height: 100%;
+  width: 100%;
+}

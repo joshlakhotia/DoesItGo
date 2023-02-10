@@ -11,10 +11,10 @@ Launch.createLaunch = (name, description, launch_types, cliff_launch, hiking_tim
 
 };
 
-Launch.createLocation = (city, state, country, coordinates) => {
+Launch.createLocation = (city, state, country, latitude, longitude) => {
 
-  return pool.query("INSERT INTO launch_location (city, state, country, coordinates) VALUES ($1, $2, $3, $4) RETURNING *",
-  [ city, state, country, coordinates ]);
+  return pool.query("INSERT INTO launch_location (city, state, country, latitude, longitude) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+  [ city, state, country, latitude, longitude ]);
 
 };
 
@@ -48,9 +48,9 @@ Launch.updateLaunch = (name, description, launch_types, cliff_launch, hiking_tim
 
 };
 
-Launch.updateLocation = (city, state, country, coordinates, id) => {
+Launch.updateLocation = (city, state, country, latitude, longitude, id) => {
 
-  return pool.query("UPDATE launch_location SET city = $1, state = $2, country = $3, coordinates = $4 WHERE launch_id = $5", [city, state, country, coordinates, id]);
+  return pool.query("UPDATE launch_location SET city = $1, state = $2, country = $3, latitude = $4, longitude = $5 WHERE launch_id = $6", [city, state, country, latitude, longitude, id]);
 
 };
 
