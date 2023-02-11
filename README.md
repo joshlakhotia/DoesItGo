@@ -46,6 +46,7 @@ Ex. If it is the middle of the day, the app will show the forecast for that even
 * Add better styling
 * Add image storing capabilities for photos of launches and their flights
 * Have forms redirect to the home page after submitting, editing or deleting
+* Security
 
 ## BUGS
 * Refreshing the launch page resets the id state which keeps the get request from working, thus clearing out all information about the launch.
